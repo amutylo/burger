@@ -1,17 +1,14 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './App.css'
 import Layout from './components/Layout/Layout'
+import BurgerBuilder from './containers/BurgerBuilder/BurgerBuilder'
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <Layout>
-          <p>asfasf</p>
-        </Layout>
-      </div>
-    )
-  }
-}
+const App = () => (
+  <div>
+    <Layout>
+      <BurgerBuilder />
+    </Layout>
+  </div>
+)
 
 export default App
